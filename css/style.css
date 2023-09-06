@@ -69,16 +69,15 @@ body {
 .card2 {
     display: flex;
     flex-wrap: wrap;
-    height: 400px;
     width: fit-content;
+    max-height: 380px;
     min-width: 50%;
-    max-width: 200px;
     position: absolute;
     left: 100%;
     margin: 10% 15%;
     margin-left: 200px;
     justify-content: center;
-    
+        
 }
 
 img.card-img-top {
