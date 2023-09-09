@@ -37,7 +37,7 @@ img.card-img-top {
 }
 
 .navbar {
-    background-color: rgb(249, 238, 253);
+    background-color: rgb(249, 238, 253);  
 }
 
 
@@ -74,9 +74,6 @@ footer {
 
 
 
-.cv {
-    background-color: rgb(249, 238, 253);
-}
 
 .iconContainer {
 display: flex;
