@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-</head>
+ </head>
 
 <body>
 
@@ -27,13 +27,19 @@
               <a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Curriculum</a>
+              <a class="nav-link active" href="./img/Eliana_Moguilevsky_2023_fedev1.pdf" target="_blank">Curriculum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#proyectos">Proyectos</a>
+              <a class="nav-link active" href="#proyectos">Proyectos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contacto
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="mailto: eliana.moguilevsky@gmail.com" target="blank">Correo</a></li>
+                <li><a class="dropdown-item" href="https://www.linkedin.com/in/elianamoguilevsky/" target="blank">LinkedIn</a></li>
+              </ul>
             </li>
 
           </ul>
@@ -43,53 +49,40 @@
   </header>
 
   <section>
-    <div class="container-inicio">
-      <div class="card card1">
-        <div class="fotoEliana">
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center align-items-center">
+      <div class="col">
+        <div class="card h-100 border-0" >
           <br>
-          <img src="/img/eliana.jpg" class="card-img-top" alt="foto de Eliana">
+          <img src="img/eliana.jpg" class="card-img-top w-25" alt="foto de Eliana">
+          <div class="card-body">
+            <h5 class="card-title">Eliana Moguilevsky</h5>
+            <br>
+            <div class="linea-horizontal"></div>
+            <br>
+            <p class="card-text">Front End Devoloper</p>
+            <div class="iconContainer mt-4">
+              <a href="https://github.com/ElianaMoguilevsky" target="blank">
+                <img src="./img/icons/291716_github_logo_social network_social_icon.png" style="max-width: 16px; max-height: 16px;"
+                alt="github"></a>              
+              <a href="https://www.linkedin.com/in/elianamoguilevsky/" target="blank">
+                <img src="./img/icons/367593_linkedin_business_network_social_icon.png" style="max-width: 16px; max-height: 16px;" alt="github"></a>
+              <a href="mailto: eliana.moguilevsky@gmail.com" target="blank">
+                <img src="./img/icons/1181190_email_gmail_google_mail_icon.png" style="max-width: 16px; max-height: 16px;" alt="github"></a>
+            </div>
+          </div>
         </div>
-
-        <div class="card-body">
-          <h5 class="card-title">Eliana Moguilevsky</h5>
-          <br>
-          <div class="linea-horizontal"></div>
-          <br>
-          <p class="card-text">Front End Devoloper</p>
-
-          <div class="iconContainer">
-
-          <a href="https://github.com/ElianaMoguilevsky" target="blank"><img
-              src="./img/icons/211904_social_github_icon.png" style="max-width: 16px; max-height: 16px;"
-              alt="github"></a>
-          <a href="https://www.linkedin.com/in/elianamoguilevsky/" target="blank"><img
-              src="./img/icons/367593_linkedin_business_network_social_icon.png"
-              style="max-width: 16px; max-height: 16px;" alt="github"></a>
-          <!-- <a href="https://wa.me/5491140873837" target="blank"><img src="./img/icons/843786_whatsapp_icon.png"
-              style="max-width: 16px; max-height: 16px;" alt="github"></a> -->
-              <a href="mailto: eliana.moguilevsky@gmail.com" target="blank"><img src="./img/icons/1181190_email_gmail_google_mail_icon.png"
-                style="max-width: 16px; max-height: 16px;" alt="github"></a>
-             
-              </div>
-
-              </div>
-
-
-
       </div>
-      
-      <div class="card-body card2">
-        <h5 class="card-title card2-title">¡Hola!</h5>
-
-        <p class="card-text card2-text">Soy Eliana. Buscando un nuevo camino hace poco descubrí el mundo del desarrollo. Tengo muchas ganas de aprender y una verdadera pasión por la programación y el diseño web. Cada línea de código escrita se ha convertido en una emocionante aventura y en una oportunidad para mejorar mis habilidades. Me motiva la idea de crear experiencias web renovadas y funcionales. Curiosa, eterna estudiante, dispuesta a enfrentar nuevos desafíos.</p>
-        
-
-
-
+      <div class="col">
+        <div class="card h-100 border-0">
+            <div class="card-body">
+            <br>
+              <h5 class="card-title">¡Hola!</h5>
+            <br>
+            <p class="card-text">Soy Eliana. Buscando un nuevo camino hace poco descubrí el mundo del desarrollo. Tengo muchas ganas de aprender y una verdadera pasión por la programación y el diseño web. Cada línea de código escrita se ha convertido en una emocionante aventura y en una oportunidad para mejorar mis habilidades. Me motiva la idea de crear experiencias web renovadas y funcionales. Curiosa, eterna estudiante, dispuesta a enfrentar nuevos desafíos.</p>
+          </div>
+        </div>
       </div>
-   
     </div>
-
 
   </section>
 
@@ -106,53 +99,59 @@
 
   </section> -->
 
-<section class="container-fluid" id="proyectos">
+<section id="proyectos">
 <!-- Proyectos -->
 
 <br>
-<h2 style="text-align: center;">Proyectos</h2> 
+<h2 style="text-align: center;" class="mb-3">Proyectos</h2> 
 
 <div class="card-group justify-content-center">
 
-  <div class="card mx-4 card-proy">
-    <img src="./img/proyectos/proy_ux_ui.jpg" class="img-fluid card-img-fluid" alt="Proyecto CAC Full Stack Front End">
+ 
+
+  <div class="card mx-3 mb-3 card-proy h-100 text-center">
+    <img src="./img/proyectos/proy_ux_ui.png" class="img-fluid card-img-fluid" alt="Proyecto UX UI 2022">
     <div class="card-body">
-      <h5 class="card-title">Proyecto UX/UI 2022</h5>
-      <p class="card-text"></p>
       <a href="https://docs.google.com/presentation/d/1kBFp8xmFy-jDM7mi845hvvE9002kRRX64N-Z6Sl5VX0/edit?usp=sharing" target="_blank"
-      class="d-grid btn btn-ligth card-btn mx-auto position-absolute bottom-0 start-50 translate-middle-x mb-3">Ver sitio</a>
+      class="btn btn-ligth card-btn mb-3 mt-3">Ver sitio</a>
+      <h5 class="card-title">Proyecto UX/UI 2022</h5>
+      <p class="card-text">Feria virtual de pequeños emprendedores</p>
+
      </div>
   </div>
 
-  <div class="card mx-4 card-proy">
-    <img src="./img/proyectos/proy_int_front_cac_2022.jpg" class="img-fluid card-img-fluid" alt="Proyecto CAC Full Stack Front End">
+  <div class="card mx-3 mb-3 card-proy h-100 text-center">
+    <img src="./img/proyectos/proy_int_front_cac_2022.png" class="img-fluid card-img-fluid" alt="Proyecto CAC Full Stack Front End">
     <div class="card-body">
+      <a href="https://tp-integrador-full-stack-nodejs-2022.netlify.app/" target="_blank"
+      class="btn btn-ligth card-btn mb-3 mt-3">Ver sitio</a>
       <h5 class="card-title">Proyecto CaC 2022</h5>
       <p class="card-text">Desarrollé este sitio en el marco del curso full stack front end</p>
-      <a href="https://tp-integrador-full-stack-nodejs-2022.netlify.app/" target="_blank"
-      class="d-grid btn btn-ligth card-btn mx-auto position-absolute bottom-0 start-50 translate-middle-x mb-3">Ver sitio</a>
+
      </div>
   </div>
 
-  <div class="card mx-4 card-proy">
-    <img src="./img/proyectos/editor_de_memes_react_2023_v2.jpg" class="img-fluid card-img-fluid" alt="Proyecto Editor de memes con React">
+  <div class="card mx-3 mb-3 card-proy h-100 text-center">
+    <img src="./img/proyectos/editor_de_memes_react_2023.png" class="img-fluid card-img-fluid" alt="Proyecto Editor de memes con React">
     <div class="card-body">
+      <a href="https://editor-de-memes.netlify.app/" target="_blank"
+      class="btn btn-ligth card-btn mb-3 mt-3">Ver sitio</a>
       <h5 class="card-title">Editor de memes</h5>
       <p class="card-text">Proyecto realizado con React</p>
-      <a href="https://editor-de-memes.netlify.app/" target="_blank"
-      class="d-grid btn btn-ligth card-btn mx-auto position-absolute bottom-0 start-50 translate-middle-x mb-3">Ver sitio</a>
+
      </div>
   </div>
 
 
 
-  <div class="card mx-4 card-proy">
-    <img src="./img/proyectos/bibliomanos.jpg" class="img-fluid card-img-fluid" alt="Proyecto Editor de memes con React">
+  <div class="card mx-3 mb-3 card-proy h-100 text-center">
+    <img src="./img/proyectos/bibliomanos.png" class="img-fluid card-img-fluid" alt="Proyecto Editor de memes con React">
     <div class="card-body">
+      <a href="https://eliana-moguilevsky-bibliomanos.netlify.app/" target="_blank"
+      class="btn btn-ligth card-btn mb-3 mt-3">Ver sitio</a>
       <h5 class="card-title">Proyecto CaC 2023</h5>
       <p class="card-text">Proyecto realizado con React</p>
-      <a href="https://eliana-moguilevsky-bibliomanos.netlify.app/" target="_blank"
-      class="d-grid btn btn-ligth card-btn mx-auto position-absolute bottom-0 start-50 translate-middle-x mb-3">Ver sitio</a>
+
      </div>
   </div>
   
@@ -162,9 +161,10 @@
 </div>
 </section>
 
-  <section id="contacto">
-    <!-- Formulario de contacto -->
+<!-- Formulario de contacto -->
 
+ <!--  <section id="contacto">
+    
 
     <div class="row mb-3 mt-3" style="padding-left: 20%; padding-right: 20%;">
       <div class="col">
@@ -185,7 +185,7 @@
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
   </div>
-  </section>
+  </section> -->
 
     <footer>
       <div class="container-fluid">
