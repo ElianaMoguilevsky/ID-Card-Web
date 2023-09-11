@@ -91,12 +91,14 @@ justify-content: space-evenly
 
 }
 
-.-proy {
+.card-proy {
     border: solid!important;
     border-width: 1px!important;
     border-color: blueviolet!important;
     border-radius: 5px!important;
- 
+    padding: 0;
+    width: 18rem;
+    min-height: 21rem;
  
 }
 
